@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-eive
+  namespace: e2e-demos-gwvd-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:9e6f0b3cf4bfb648f020e2b8d650e0dd8caefd655ff9f43162ba53a2ee248867
+        name: main
+        resources: {}
+status: {}
